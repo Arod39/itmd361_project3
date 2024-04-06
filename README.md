@@ -1,2 +1,2 @@
 # itmd361_project3
-3rd Lab in ITMD361
+3rd Project in ITMD361
