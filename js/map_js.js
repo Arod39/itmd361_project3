@@ -9,4 +9,4 @@ async function initMap() {
   });
 }
 
-initMap();
+google.maps.event.addDomListener(window, 'load', initMap);
