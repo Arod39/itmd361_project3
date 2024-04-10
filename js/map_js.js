@@ -1,5 +1,8 @@
-//Javascript for Maps API//
 /*
+
+
+//Javascript for Maps API//
+
 
 let map;
 
@@ -13,6 +16,7 @@ async function initMap() {
 }
 
 google.maps.event.addDomListener(window, 'load', initMap);
+
 */
 
 //Javascript for Image Slider on Anime Page//
