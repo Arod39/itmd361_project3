@@ -287,6 +287,7 @@ h2 {
 .image_container {
   position: relative;
   height: 350px;
+  width: 100%;
 }
 
 .slider_img {
@@ -296,10 +297,10 @@ h2 {
 }
 
 .img--selected {
-  display: block;
+  display: inline-block;
   position: relative;
   height: 350px;
-  float: left;
+  text-align: center;
 }
 
 .image_nav {
