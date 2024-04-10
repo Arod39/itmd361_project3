@@ -285,9 +285,21 @@ h2 {
 /* ------- CSS for Anime Page ------ */
 
 .image_container {
+  position: relative;
+  height: 350px;
+}
+
+.slider_img {
   height: 350px;
   background: grey;
-  padding: 1em;
+  display; none;
+}
+
+.img--selected {
+  display: block;
+  position: relative;
+  height: 350px;
+  float: left;
 }
 
 .image_nav {
@@ -310,8 +322,11 @@ h2 {
   cursor: pointer;
 }
 
-/*
+.image_button--selected {
+  background: blue;
+}
 
+/*
 #anime_title {
   text-align: center;
   font-family: "Bungee Spice", sans-serif;

@@ -17,7 +17,7 @@ google.maps.event.addDomListener(window, 'load', initMap);
 
 //Javascript for Image Slider on Anime Page//
 
-document.querySelectorAll(".image_container").forEach(image_container => {
+document.querySelectorAll(".image_container").forEach((image_container) => {
   const items = image_container.querySelectorAll(".slider_img");
   const buttonsHTML = Array.from(items, () => {
     return `<span class="image_button"></span>`;
