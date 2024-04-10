@@ -4,7 +4,6 @@
   <head>
     <title>Sample Map</title>
     <meta charset="utf-8">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXTnWOGO9dmFYvySsoXyi89E07qr2Uzx0&callback=initMap" async defer></script>
   </head>
   
   <body>
@@ -13,12 +12,16 @@
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 50.8476, lng: 4.3572},
+          center: {lat: 50.847, lng: 4.357},
           zoom: 8
           });
         }
     </script>
-  </body>
+  
+  <script src="https://maps.googleapis.com/maps/api/js?AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap" async defer>
+</script>
+ 
+ </body>
  </html>
   
    <!-- My API: AIzaSyAXTnWOGO9dmFYvySsoXyi89E07qr2Uzx0 -->
