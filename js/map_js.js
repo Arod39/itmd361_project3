@@ -18,4 +18,23 @@ google.maps.event.addDomListener(window, 'load', initMap);
 //Javascript for Image Slider on Anime Page//
 
 document.querySelectorAll(".image_container").forEach(image_container => {
-  const items = image_container.querySelectorAll("slider_img");
+  const items = image_container.querySelectorAll(".slider_img");
+  const buttonsHTML = Array.from(items, () => {
+    return `<span class="image_button"></span>`;
+  });
+  
+  image_container.insertAdjacentHTML("beforeend", `
+    <div class="image_nav">
+      ${ buttonsHTML.join("") }
+    </div>
+ `);
+    
+  const buttons = image_container.querySelectorAll(".image_button");
+  
+  buttons.forEach((button, i) => {
+    button.addEventListener("click",() => {
+     //un-select all the items
+     items.forEach(item => item.classList.remove("img--selected"));
+    });
+  });
+});
