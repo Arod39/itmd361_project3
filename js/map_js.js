@@ -19,6 +19,16 @@ google.maps.event.addDomListener(window, 'load', initMap);
 
 */
 
+  function initMap(){
+  var map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: -34.397, lng: 150.644},
+      zoom: 8
+    });
+}
+
+google.maps.event.addDomListener(window, 'load', initMap);
+
+
 //Javascript for Image Slider on Anime Page//
 
 document.querySelectorAll(".image_container").forEach((image_container) => {
