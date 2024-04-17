@@ -349,16 +349,19 @@ h2 {
 }
 
 /* CSS for Google Maps -----*/
-#map {
-  height: 100%;
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
+		#wrapper {
+			width: 850px;
+			height: 600px;
+			background-color: #c00;
+			margin:0 auto;
+			overflow: hidden;
+		}
+		#canvas {
+			width: 700px;
+			height: 500px;
+			background-color: #ccc;
+			margin: 30px auto;
+		}
 
 /*
 .pic1 {
