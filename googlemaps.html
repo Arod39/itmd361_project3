@@ -1,43 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Simple Map</title>
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
-  </head>
+<head>
+	<meta charset="UTF-8">
+	<title>Andrew's Map</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/stylize.css">
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap"></script>
+	<script async src="js/map_js.js"></script>
+</head>
   
-  <body>
+ <body>
+ 
+  <header id="main_header">
+    <nav id="nav_buttons">
+      <ul id="nav_ul"> 
+        <li><a href="index.html">Resume</a></li>
+        <li><a href="pcbuilds.html">PC Builds</a></li>
+        <li><a href="animes.html">My Anime</a></li>
+        <li><a href="googlemaps.html"> Google Maps API</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="wrapper">
+    <div id="canvas"></div>
+  </div>
   
-    <header id="main_header">
-      <nav id="nav_buttons">
-        <ul id="nav_ul"> 
-          <li><a href="index.html">Resume</a></li>
-          <li><a href="pcbuilds.html">PC Builds</a></li>
-          <li><a href="animes.html">My Anime</a></li>
-          <li><a href="googlemaps.html"> Google Maps API</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-    <div id="map"></div>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
-    </script>
-    
-    <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBlbmOUBqfcprydBDIyzOn2GVHQSNs8l4&loading=async&callback=initMap">
-    </script>
-    
-  </body>
+</body>
 </html>
 
    <!-- My API: AIzaSyAXTnWOGO9dmFYvySsoXyi89E07qr2Uzx0 -->
    <!-- My 2nd API: AIzaSyDBlbmOUBqfcprydBDIyzOn2GVHQSNs8l4 -->
-   
+   <!-- 3rd API: AIzaSyD7VC3AVaYhbznGI48AFiMp7Ck5URhX-qo
+   <!-- Professors API: AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI -->
    <!-- Documentation used for JS and HTML: https://developers.google.com/maps/documentation/javascript/load-maps-js-api#javascript -->
