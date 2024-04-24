@@ -102,21 +102,172 @@ h2 {
   padding-top: 10px;
 }
 
-/* ------- CSS for PC Page -------- */
+/* ------- CSS for Media Queries on PC Page -------- */
 
-@media (min-width: 1000px) {
+@media only screen and (min-width: 380px) {
  
-  #pcbuilds_body {
+  #page_wrapperpc { 
     background-image: url("../images/resume_bg.jpg");
-    width: 45%;
+    width: 75%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
   }
   
-  #footer {
+  #build1_specs {
+    width: 100%;
+  }
+
+  #build2_specs {
+    width: 100%;
+  }
+  
+  #build3_specs {
+    width: 100%;
+  }
+  
+  #build4_specs {
+    width: 100%;
+  }
+  
+  #nav_ul ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    border-radius: 15px;
     background-color: blue;
+    color: white;
+    float: left;
+  }
+  
+  #pc_intro {
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+  
+  #mypc_img {
+    height: 300px;
+    width: 200px;
+    margin-left: 15px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+
+  #secondpc_img {
+    height: 300px;
+    width: 200px;
+    margin-left: 15px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+  
+  #thirdpc_img {
+  height: 300px;
+  width: 200px;
+  margin-left: 15px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+  #fourthpc_img {
+    height: 300px;
+    width: 200px;
+    margin-left: 15px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 15px;
   }
   
 }
 
+@media only screen and (min-width: 1000px) {
+  
+    #page_wrapperpc { 
+    background-image: url("../images/waves_bg.jpg");
+    width: 75%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: auto;
+    background-repeat: round;
+  }
+  
+  #build1_specs {
+    width: 90%;
+  }
+
+  #build2_specs {
+    width: 100%;
+  }
+  
+  #build3_specs {
+    width: 90%;
+  }
+  
+  #build4_specs {
+    width: 100%;
+  }
+  
+  #nav_buttons ul li a {
+    text-decoration: none;
+    padding: 10px 10px;
+    display: block;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    float: left;
+  }
+  
+  #pc_intro {
+    background-color: gray;
+    color: white;
+    text-align: center;
+  }
+   
+  #mypc_img {
+    height: 500px;
+    width: 400px;
+    margin-left: 15px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+
+  #secondpc_img {
+    height: 500px;
+    width: 400px;
+    margin-left: 15px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+  
+  #thirdpc_img {
+  height: 500px;
+  width: 400px;
+  margin-left: 15px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+  #fourthpc_img {
+    height: 500px;
+    width: 400px;
+    margin-left: 15px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+  
+
+}
+  
+/* ------- Commenting Out Certain CSS for PC Page to allow media query modification -------- */ 
+ 
 #pcbuilds_body {
  background-image: url("../images/red_black_bg.jpg");
 }
@@ -152,6 +303,7 @@ h2 {
   text-align: center;
 }
 
+/*
 #mypc_img {
   height: 400px;
   width: 300px;
@@ -160,6 +312,7 @@ h2 {
   margin-right: 20px;
   margin-bottom: 25px;
 }
+*/
 
 #mypc_img:hover {
   transform: scale(1.1);
@@ -188,6 +341,7 @@ h2 {
   color: white;
 }
 
+/*
 #secondpc_img {
   height: 400px;
   width: 300px;
@@ -196,6 +350,7 @@ h2 {
   margin-right: 20px;
   margin-bottom: 25px;
 }
+*/
 
 #secondpc_img:hover {
   transform: scale(1.1);
@@ -211,6 +366,7 @@ h2 {
   list-style-type: none;
   color: white;
   border-style: solid;
+  float: left;
   margin-right: 15px;
   text-align: left;
 }
@@ -224,6 +380,7 @@ h2 {
   color: white;
 }
 
+/*
 #thirdpc_img {
   height: 400px;
   width: 300px;
@@ -232,6 +389,7 @@ h2 {
   margin-right: 30px;
   margin-bottom: 25px;
 }
+*/
 
 #thirdpc_img:hover {
   transform: scale(1.1);
@@ -247,7 +405,7 @@ h2 {
   list-style-type: none;
   color: white;
   border-style: solid;
-  float: right;
+  float: left;
   margin-right: 15px;
   text-align: left;
 }
@@ -263,6 +421,7 @@ h2 {
   margin-bottom: 20px;
 }
 
+/*
 #fourthpc_img {
   height: 400px;
   width: 300px;
@@ -271,6 +430,7 @@ h2 {
   margin-right: 30px;
   margin-bottom: 25px;
 }
+*/
 
 #fourthpc_img:hover {
   transform: scale(1.1);
