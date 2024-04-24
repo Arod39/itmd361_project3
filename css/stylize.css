@@ -104,6 +104,19 @@ h2 {
 
 /* ------- CSS for PC Page -------- */
 
+@media (min-width: 1000px) {
+ 
+  #pcbuilds_body {
+    background-image: url("../images/resume_bg.jpg");
+    width: 45%;
+  }
+  
+  #footer {
+    background-color: blue;
+  }
+  
+}
+
 #pcbuilds_body {
  background-image: url("../images/red_black_bg.jpg");
 }
@@ -286,14 +299,17 @@ h2 {
 
 .image_container {
   position: relative;
-  height: 350px;
+  height: auto;
   width: 100%;
 }
 
 .slider_img {
-  height: 350px;
+  height: 600px;
   background: grey;
   display: none;
+  width: 100%;
+  text-align: center;
+  background-size: cover;
 }
 
 .slider_img--selected {
@@ -311,8 +327,8 @@ h2 {
   }
   
 .image_button {
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   display: inline-block;
   background: black;
   border-radius: 50%;
@@ -323,8 +339,6 @@ h2 {
 .image_button--selected {
   background: blue;
 }
-
-
 
 #anime_title {
   text-align: center;
@@ -351,17 +365,20 @@ h2 {
 /* CSS for Google Maps -----*/
 		#wrapper {
 			width: 850px;
-			height: 600px;
-			background-color: #c00;
+			height: 800px;
+			background-color: black;
 			margin:0 auto;
 			overflow: hidden;
 		}
 		#canvas {
 			width: 700px;
-			height: 500px;
-			background-color: #ccc;
+			height: 400px;
+      padding-top: 30px;
+			background-color: red;
 			margin: 30px auto;
 		}
+
+
 
 /*
 .pic1 {
